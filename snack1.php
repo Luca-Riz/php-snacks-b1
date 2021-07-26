@@ -3,17 +3,33 @@ Creiamo un array contenente le partite di basket di un’ipotetica tappa del cal
 Olimpia Milano - Cantù | 55-60 -->
 
 <?php
-  $partite [
+  $partite = [
     [
-      'casa' => ,
-      'ospite' => ,
-      'puntiCasa' => ,
-      'puntiOspite' =>  
+      'casa' => 'Hawks',
+      'ospite' => 'Wizards',
+      'puntiCasa' => 120,
+      'puntiOspite' => 116,
+    ],
+    [
+      'casa' => 'Nets',
+      'ospite' => 'Spurs',
+      'puntiCasa' => 128,
+      'puntiOspite' => 116,
+    ],
+    [
+      'casa' => 'Cavaliers',
+      'ospite' => 'Celtics',
+      'puntiCasa' => 102,
+      'puntiOspite' => 94,
+    ],
+    [
+      'casa' => 'Lakers',
+      'ospite' => 'Rockets',
+      'puntiCasa' => 124,
+      'puntiOspite' => 122,
     ]
   ]
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,6 +40,9 @@ Olimpia Milano - Cantù | 55-60 -->
   <title>Snack 1</title>
 </head>
 <body>
+
+<!-- Stampiamo a schermo tutte le partite con questo schema.
+Olimpia Milano - Cantù | 55-60 -->
 
 
 
