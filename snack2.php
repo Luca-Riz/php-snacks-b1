@@ -18,10 +18,10 @@ Passare come parametri GET name, mail e age e verificare (cercando i metodi che 
    $mail = $_GET['mail'];
    $age = $_GET['age'];
 
-   if (count($name) > 3 && 
+   if (strlen($name) > 3 && 
     strpos($mail, '@') != false &&
     strpos($mail, '.') != false &&
-    is_int($age) == true){
+    is_int($age) != false){
       $verifica = 'Accesso riuscito';
     } else {
       $verifica = 'Accesso negato';
@@ -29,6 +29,7 @@ Passare come parametri GET name, mail e age e verificare (cercando i metodi che 
     var_dump($name);
     var_dump($mail);
     var_dump($age);
+    var_dump(is_int($age));
 ?>
 
 <div>
