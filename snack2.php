@@ -13,15 +13,15 @@ Passare come parametri GET name, mail e age e verificare (cercando i metodi che 
   
 <a href="?name=Luca&mail=luca@mail.it&age=30">Add url data</a>
 
-<?php //prendo i valori dall' url e li assegno a variabili
+<?php                                 //prendo i valori dall' url e li assegno a variabili
    $name = $_GET['name'];
    $mail = $_GET['mail'];
    $age = $_GET['age'];
 
-   if (strlen($name) > 3 && //se $name è più lungo di 3 caratteri e
-    strpos($mail, '@') != false && //se mail contiene il carattere '@' (quando risponde false non è presente, altrimenti risponde con la posizione)
-    strpos($mail, '.') != false && //come sopra ma con il carattere '.'
-    is_numeric($age)){ //is_numeric trova se una variabile è un numero o una stringa numerica, se true = numero, false != numero
+   if (strlen($name) > 3 &&           //se $name è più lungo di 3 caratteri e
+    strpos($mail, '@') != false &&    //se mail contiene il carattere '@' (quando risponde false non è presente, altrimenti risponde con la posizione)
+    strpos($mail, '.') != false &&    //come sopra ma con il carattere '.'
+    is_numeric($age)){                //is_numeric trova se una variabile è un numero o una stringa numerica, se true = numero, false != numero
       $verifica = 'Accesso riuscito';
     } else {
       $verifica = 'Accesso negato';
