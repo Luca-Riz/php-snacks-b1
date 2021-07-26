@@ -27,6 +27,18 @@ Olimpia Milano - Cantù | 55-60 -->
       'ospite' => 'Rockets',
       'puntiCasa' => 124,
       'puntiOspite' => 122,
+    ],
+    [
+      'casa' => 'Mavericks',
+      'ospite' => 'Pelicans',
+      'puntiCasa' => 125,
+      'puntiOspite' => 107,
+    ],
+    [
+      'casa' => 'Jazz',
+      'ospite' => 'Trail Blazers',
+      'puntiCasa' => 98,
+      'puntiOspite' => 105,
     ]
   ]
 ?>
@@ -44,10 +56,12 @@ Olimpia Milano - Cantù | 55-60 -->
 <!-- Stampiamo a schermo tutte le partite con questo schema.
 Olimpia Milano - Cantù | 55-60 -->
 
+<h2>Giornata 13 maggio 2021 NBA</h2>
+
 <ul>
-  <?php for($i = 0; $i < 4; $i++) { ?>
+  <?php for($i = 0; $i < count($partite); $i++) { ?>
     
-    <li><?php echo $partite[$i]['casa'] ?></li> 
+    <li><?php echo $partite[$i]['casa']?> - <?php echo $partite[$i]['ospite']?> | <?php echo $partite[$i]['puntiCasa']?>-<?php echo $partite[$i]['puntiOspite']?></li> 
 
   <?php } ?>
 
