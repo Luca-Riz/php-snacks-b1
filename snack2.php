@@ -11,17 +11,17 @@
 <!-- Snack 2
 Passare come parametri GET name, mail e age e verificare (cercando i metodi che non conosciamo nella documentazione) che name sia più lungo di 3 caratteri, che mail contenga un punto e una chiocciola e che age sia un numero. Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” -->
   
-<a href="?name=Luca&mail=luca@mail.it&age=30">Add url data</a>
+<a href="?name=Luca&mail=luca@mail.it&age=1">Add url data</a>
 
 <?php
    $name = $_GET['name'];
    $mail = $_GET['mail'];
-   $age = intval($_GET['age']);
+   $age = $_GET['age'];
 
    if (strlen($name) > 3 && 
     strpos($mail, '@') != false &&
     strpos($mail, '.') != false &&
-    is_int($age) != false){
+    is_numeric($age) != 0){
       $verifica = 'Accesso riuscito';
     } else {
       $verifica = 'Accesso negato';
@@ -29,7 +29,7 @@ Passare come parametri GET name, mail e age e verificare (cercando i metodi che 
     var_dump($name);
     var_dump($mail);
     var_dump($age);
-    var_dump(is_int($age));
+    var_dump(is_numeric($age));
 ?>
 
 <div>
