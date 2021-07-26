@@ -16,7 +16,7 @@ Passare come parametri GET name, mail e age e verificare (cercando i metodi che 
 <?php
    $name = $_GET['name'];
    $mail = $_GET['mail'];
-   $age = $_GET['age'];
+   $age = intval($_GET['age']);
 
    if (strlen($name) > 3 && 
     strpos($mail, '@') != false &&
