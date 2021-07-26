@@ -44,7 +44,15 @@ Olimpia Milano - Cantù | 55-60 -->
 <!-- Stampiamo a schermo tutte le partite con questo schema.
 Olimpia Milano - Cantù | 55-60 -->
 
+<ul>
+  <?php for($i = 0; $i < 4; $i++) { ?>
+    
+    <li><?php echo $partite[$i]['casa'] ?></li> 
 
+  <?php } ?>
+
+  
+</ul>
 
   
 </body>
