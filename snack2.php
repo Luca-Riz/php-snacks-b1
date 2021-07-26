@@ -21,7 +21,7 @@ Passare come parametri GET name, mail e age e verificare (cercando i metodi che 
    if (strlen($name) > 3 && //se $name è più lungo di 3 caratteri e
     strpos($mail, '@') != false && //se mail contiene il carattere '@' (quando risponde false non è presente, altrimenti risponde con la posizione)
     strpos($mail, '.') != false && //come sopra ma con il carattere '.'
-    is_numeric($age) == true){ //is_numeric trava se una variabile è un nuemro o una stringa numerica, se true = numero, false != numero
+    is_numeric($age)){ //is_numeric trova se una variabile è un numero o una stringa numerica, se true = numero, false != numero
       $verifica = 'Accesso riuscito';
     } else {
       $verifica = 'Accesso negato';
